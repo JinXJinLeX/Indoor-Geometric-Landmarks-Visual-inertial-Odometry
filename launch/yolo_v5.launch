@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<launch>
+
+  <!-- Load Parameter -->
+  
+  <param name="yolov5_path"       value="$(find yolov5_ros)/yolov5"/>
+  <param name="use_cpu"           value="false" />
+
+  <!-- Start yolov5 and ros wrapper -->
+  <!-- <node pkg="image_transport" type="republish" name="republish" args="compressed in:=/left_camera/image raw out:=/left_camera/image" output="screen" respawn="true" /> -->
+  <node pkg="yolov5_ros" type="yolo_v5.py" name="yolov5_ros" output="screen" >
+    <param name="weight_path"       value="$(find yolov5_ros)/weights/best.pt"/>
+    <param name="image_topic"       value="/left_camera/image" />
+    <param name="pub_topic"         value="/yolov5/BoundingBoxes" /><!-- 发布的话题 -->
+    <param name="camera_frame"       value="camera_color_frame"/>
+    <param name="conf"              value="0.6" /><!-- 置信度在此设置，大于阈值则框出 -->
+  </node>
+
+</launch>
