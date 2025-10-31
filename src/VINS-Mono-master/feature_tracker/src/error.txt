@@ -1,0 +1,866 @@
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘void cvCanny3(const void*, void*, void*, void*, int)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: error: no matching function for call to ‘cv::Mat::Mat(const void*&, bool)’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core/mat.hpp:3724,
+                 from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:1380:1: note: candidate: ‘cv::Mat::Mat(cv::Mat&&)’
+ 1380 | Mat::Mat(Mat&& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:1380:1: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/opencv4/opencv2/core/cuda.hpp:1047,
+                 from /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp:47,
+                 from /usr/include/opencv4/opencv2/stitching/warpers.hpp:46,
+                 from /usr/include/opencv4/opencv2/stitching.hpp:48,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:89,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.h:14,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:52:
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:621:1: note: candidate: ‘cv::Mat::Mat(const cv::cuda::GpuMat&)’
+  621 | Mat::Mat(const cuda::GpuMat& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:621:1: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1038:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::MatCommaInitializer_<_Tp>&)’
+ 1038 |     template<typename _Tp> explicit Mat(const MatCommaInitializer_<_Tp>& commaInitializer);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1038:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘const cv::MatCommaInitializer_<_Tp>’ and ‘const void*’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1034:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::Point3_<_Tp>&, bool)’
+ 1034 |     template<typename _Tp> explicit Mat(const Point3_<_Tp>& pt, bool copyData=true);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1034:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘const void*’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1030:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::Point_<_Tp>&, bool)’
+ 1030 |     template<typename _Tp> explicit Mat(const Point_<_Tp>& pt, bool copyData=true);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1030:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘const void*’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1026:51: note: candidate: ‘template<class _Tp, int m, int n> cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool)’
+ 1026 |     template<typename _Tp, int m, int n> explicit Mat(const Matx<_Tp, m, n>& mtx, bool copyData=true);
+      |                                                   ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1026:51: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘const void*’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1022:44: note: candidate: ‘template<class _Tp, int n> cv::Mat::Mat(const cv::Vec<_Tp, m>&, bool)’
+ 1022 |     template<typename _Tp, int n> explicit Mat(const Vec<_Tp, n>& vec, bool copyData=true);
+      |                                            ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1022:44: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘const void*’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1018:49: note: candidate: ‘template<class _Tp, long unsigned int _Nm> cv::Mat::Mat(const std::array<_Tp, _Nm>&, bool)’
+ 1018 |     template<typename _Tp, size_t _Nm> explicit Mat(const std::array<_Tp, _Nm>& arr, bool copyData=false);
+      |                                                 ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1018:49: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘const std::array<_Tp, _Nm>’ and ‘const void*’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1014:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(std::initializer_list<int>, std::initializer_list<_Tp>)’
+ 1014 |     template<typename _Tp> explicit Mat(const std::initializer_list<int> sizes, const std::initializer_list<_Tp> list);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1014:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘bool’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1010:14: note: candidate: ‘template<class _Tp, class> cv::Mat::Mat(std::initializer_list<_Tp>)’
+ 1010 |     explicit Mat(const std::initializer_list<_Tp> list);
+      |              ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1010:14: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘const void*’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1005:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const std::vector<_Tp>&, bool)’
+ 1005 |     template<typename _Tp> explicit Mat(const std::vector<_Tp>& vec, bool copyData=false);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1005:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3381:35: note:   mismatched types ‘const std::vector<_Tp>’ and ‘const void*’
+ 3381 |  cv::Mat src = cv::Mat(srcarr,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:987:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const std::vector<cv::Range>&)’
+  987 |     Mat(const Mat& m, const std::vector<Range>& ranges);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:987:20: note:   no known conversion for argument 1 from ‘const void*’ to ‘const cv::Mat&’
+  987 |     Mat(const Mat& m, const std::vector<Range>& ranges);
+      |         ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.hpp:977:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const cv::Range*)’
+  977 |     Mat(const Mat& m, const Range* ranges);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:977:20: note:   no known conversion for argument 1 from ‘const void*’ to ‘const cv::Mat&’
+  977 |     Mat(const Mat& m, const Range* ranges);
+      |         ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.hpp:967:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const Rect&)’
+  967 |     Mat(const Mat& m, const Rect& roi);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:967:20: note:   no known conversion for argument 1 from ‘const void*’ to ‘const cv::Mat&’
+  967 |     Mat(const Mat& m, const Rect& roi);
+      |         ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.hpp:957:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const cv::Range&, const cv::Range&)’
+  957 |     Mat(const Mat& m, const Range& rowRange, const Range& colRange=Range::all());
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:957:20: note:   no known conversion for argument 1 from ‘const void*’ to ‘const cv::Mat&’
+  957 |     Mat(const Mat& m, const Range& rowRange, const Range& colRange=Range::all());
+      |         ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.hpp:945:5: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int, void*, const size_t*)’
+  945 |     Mat(const std::vector<int>& sizes, int type, void* data, const size_t* steps=0);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:945:5: note:   candidate expects 4 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.hpp:931:5: note: candidate: ‘cv::Mat::Mat(int, const int*, int, void*, const size_t*)’
+  931 |     Mat(int ndims, const int* sizes, int type, void* data, const size_t* steps=0);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:931:5: note:   candidate expects 5 arguments, 2 provided
+In file included from /usr/include/opencv4/opencv2/core/mat.hpp:3724,
+                 from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:572:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int, void*, size_t)’
+  572 | Mat::Mat(Size _sz, int _type, void* _data, size_t _step)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:572:1: note:   candidate expects 4 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:543:1: note: candidate: ‘cv::Mat::Mat(int, int, int, void*, size_t)’
+  543 | Mat::Mat(int _rows, int _cols, int _type, void* _data, size_t _step)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:543:1: note:   candidate expects 5 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:524:1: note: candidate: ‘cv::Mat::Mat(const cv::Mat&)’
+  524 | Mat::Mat(const Mat& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:524:1: note:   candidate expects 1 argument, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:515:1: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int, const Scalar&)’
+  515 | Mat::Mat(const std::vector<int>& _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:515:1: note:   candidate expects 3 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:498:1: note: candidate: ‘cv::Mat::Mat(int, const int*, int, const Scalar&)’
+  498 | Mat::Mat(int _dims, const int* _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:498:1: note:   candidate expects 4 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:507:1: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int)’
+  507 | Mat::Mat(const std::vector<int>& _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:507:34: note:   no known conversion for argument 1 from ‘const void*’ to ‘const std::vector<int>&’
+  507 | Mat::Mat(const std::vector<int>& _sz, int _type)
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:490:1: note: candidate: ‘cv::Mat::Mat(int, const int*, int)’
+  490 | Mat::Mat(int _dims, const int* _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:490:1: note:   candidate expects 3 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:481:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int, const Scalar&)’
+  481 | Mat::Mat(Size _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:481:1: note:   candidate expects 3 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:464:1: note: candidate: ‘cv::Mat::Mat(int, int, int, const Scalar&)’
+  464 | Mat::Mat(int _rows, int _cols, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:464:1: note:   candidate expects 4 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:473:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int)’
+  473 | Mat::Mat(Size _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:473:15: note:   no known conversion for argument 1 from ‘const void*’ to ‘cv::Size’ {aka ‘cv::Size_<int>’}
+  473 | Mat::Mat(Size _sz, int _type)
+      |          ~~~~~^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:456:1: note: candidate: ‘cv::Mat::Mat(int, int, int)’
+  456 | Mat::Mat(int _rows, int _cols, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:456:1: note:   candidate expects 3 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:450:1: note: candidate: ‘cv::Mat::Mat()’
+  450 | Mat::Mat()
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:450:1: note:   candidate expects 0 arguments, 2 provided
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3382:26: error: ‘cvGetMat’ was not declared in this scope
+ 3382 |  cv::Mat dststub, *dst = cvGetMat(dstarr, &dststub);
+      |                          ^~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3398:7: error: request for member ‘type’ in ‘dst’, which is of pointer type ‘cv::Mat*’ (maybe you meant to use ‘->’ ?)
+ 3398 |   dst.type() != CV_8UC1 ||
+      |       ^~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3399:6: error: request for member ‘type’ in ‘dx’, which is of pointer type ‘cv::Mat*’ (maybe you meant to use ‘->’ ?)
+ 3399 |   dx.type() != CV_16SC1 ||
+      |      ^~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3400:6: error: request for member ‘type’ in ‘dy’, which is of pointer type ‘cv::Mat*’ (maybe you meant to use ‘->’ ?)
+ 3400 |   dy.type() != CV_16SC1)
+      |      ^~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3401:12: error: expected primary-expression before ‘(’ token
+ 3401 |   cv::Error(CV_StsUnsupportedFormat, "");
+      |            ^
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3401:13: error: ‘CV_StsUnsupportedFormat’ was not declared in this scope
+ 3401 |   cv::Error(CV_StsUnsupportedFormat, "");
+      |             ^~~~~~~~~~~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3403:7: error: ‘CV_ARE_SIZES_EQ’ was not declared in this scope
+ 3403 |  if (!CV_ARE_SIZES_EQ(src, dst))
+      |       ^~~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3404:12: error: expected primary-expression before ‘(’ token
+ 3404 |   cv::Error(CV_StsUnmatchedSizes, "");
+      |            ^
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3404:13: error: ‘CV_StsUnmatchedSizes’ was not declared in this scope
+ 3404 |   cv::Error(CV_StsUnmatchedSizes, "");
+      |             ^~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/opencv4/opencv2/core.hpp:54,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3408:12: error: ‘CV_StsBadFlag’ was not declared in this scope
+ 3408 |   CV_Error(CV_StsBadFlag, "");
+      |            ^~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3410:18: error: base operand of ‘->’ has non-pointer type ‘cv::Mat’
+ 3410 |  size.width = src->cols;
+      |                  ^~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3411:19: error: base operand of ‘->’ has non-pointer type ‘cv::Mat’
+ 3411 |  size.height = src->rows;
+      |                   ^~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3414:17: error: invalid initialization of reference of type ‘cv::OutputArray’ {aka ‘const cv::_OutputArray&’} from expression of type ‘cv::Mat*’
+ 3414 |  cv::Sobel(src, dx, 1, 0, aperture_size);
+      |                 ^~
+In file included from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/imgproc.hpp:1667:54: note: in passing argument 2 of ‘void cv::Sobel(cv::InputArray, cv::OutputArray, int, int, int, int, double, double, int)’
+ 1667 | CV_EXPORTS_W void Sobel( InputArray src, OutputArray dst, int ddepth,
+      |                                          ~~~~~~~~~~~~^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3415:17: error: invalid initialization of reference of type ‘cv::OutputArray’ {aka ‘const cv::_OutputArray&’} from expression of type ‘cv::Mat*’
+ 3415 |  cv::Sobel(src, dy, 0, 1, aperture_size);
+      |                 ^~
+In file included from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/imgproc.hpp:1667:54: note: in passing argument 2 of ‘void cv::Sobel(cv::InputArray, cv::OutputArray, int, int, int, int, double, double, int)’
+ 1667 | CV_EXPORTS_W void Sobel( InputArray src, OutputArray dst, int ddepth,
+      |                                          ~~~~~~~~~~~~^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3423:41: error: request for member ‘ptr’ in ‘dx->cv::Mat::data’, which is of non-class type ‘uchar*’ {aka ‘unsigned char*’}
+ 3423 |   const short *_dx = (short *)(dx->data.ptr + dx->step * i);
+      |                                         ^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3424:41: error: request for member ‘ptr’ in ‘dy->cv::Mat::data’, which is of non-class type ‘uchar*’ {aka ‘unsigned char*’}
+ 3424 |   const short *_dy = (short *)(dy->data.ptr + dy->step * i);
+      |                                         ^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3453:8: warning: unused variable ‘hgf’ [-Wunused-variable]
+ 3453 |    int hgf = int(_pmag[j]);
+      |        ^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3516:12: error: ‘cvMat’ was not declared in this scope
+ 3516 |  mag_row = cvMat(1, size.width, CV_32F);
+      |            ^~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3527:41: error: request for member ‘ptr’ in ‘dx->cv::Mat::data’, which is of non-class type ‘uchar*’ {aka ‘unsigned char*’}
+ 3527 |   const short *_dx = (short *)(dx->data.ptr + dx->step * i);
+      |                                         ^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3528:41: error: request for member ‘ptr’ in ‘dy->cv::Mat::data’, which is of non-class type ‘uchar*’ {aka ‘unsigned char*’}
+ 3528 |   const short *_dy = (short *)(dy->data.ptr + dy->step * i);
+      |                                         ^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3564:28: error: request for member ‘ptr’ in ‘dx->cv::Mat::data’, which is of non-class type ‘uchar*’ {aka ‘unsigned char*’}
+ 3564 |   _dx = (short *)(dx->data.ptr + dx->step * (i - 1));
+      |                            ^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3565:28: error: request for member ‘ptr’ in ‘dy->cv::Mat::data’, which is of non-class type ‘uchar*’ {aka ‘unsigned char*’}
+ 3565 |   _dy = (short *)(dy->data.ptr + dy->step * (i - 1));
+      |                            ^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3690:27: error: request for member ‘ptr’ in ‘dst->cv::Mat::data’, which is of non-class type ‘uchar*’ {aka ‘unsigned char*’}
+ 3690 |   uchar *_dst = dst->data.ptr + dst->step * i;
+      |                           ^~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘void calculateGradient3(double*, unsigned int, unsigned int, image_double_s**, cv::Mat1b&)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3750:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+ 3750 |  for (int i = 0; i < imgx; i++)
+      |                  ~~^~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3752:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+ 3752 |   for (int j = 0; j < imgy; j++)
+      |                   ~~^~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘int fitEllipse(point2d*, int, double*)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3891:126: error: too many arguments to function ‘void dggev_(const char*, const char*, const int*, double*, const int*, double*, const int*, double*, double*, double*, double*, const int*, double*, const int*, double*, const int*, int*)’
+ 3891 |  dggev_(&JOBVL, &JOBVR, &fitN, S, &fitN, C, &fitN, alphar, alphai, beta, vl, &fitN, vr, &fitN, fitWork, &workLen, &info, 6, 6);
+      |                                                                                                                              ^
+In file included from /usr/include/lapack.h:11,
+                 from /usr/include/lapacke.h:37,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3:
+/usr/include/lapack.h:3209:6: note: declared here
+ 3209 | void LAPACK_dggev(
+      |      ^~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘int fitEllipse2(double*, double*)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:4021:126: error: too many arguments to function ‘void dggev_(const char*, const char*, const int*, double*, const int*, double*, const int*, double*, double*, double*, double*, const int*, double*, const int*, double*, const int*, int*)’
+ 4021 |  dggev_(&JOBVL, &JOBVR, &fitN, S, &fitN, C, &fitN, alphar, alphai, beta, vl, &fitN, vr, &fitN, fitWork, &workLen, &info, 6, 6); // 这里的函数在matlab里？需要自己写QZ分解
+      |                                                                                                                              ^
+In file included from /usr/include/lapack.h:11,
+                 from /usr/include/lapacke.h:37,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:3:
+/usr/include/lapack.h:3209:6: note: declared here
+ 3209 | void LAPACK_dggev(
+      |      ^~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘PairGroupList* getValidInitialEllipseSet(double*, int, std::vector<std::vector<int> >*, double*, image_double, double, int, int*)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:4601:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 4601 |   for (j = 0; j < (*groups)[i].size(); j++)
+      |               ~~^~~~~~~~~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:4630:12: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ 4630 |      error("getValidInitialEllipseSet, selection of salient ellipses failed!"); // 这种情况会出现？？,跑54.jpg出现该问题
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘cv::Mat RGB_extractor(std::vector<cv::Mat>, int, int)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5009:9: warning: unused variable ‘temp’ [-Wunused-variable]
+ 5009 |  double temp;
+      |         ^~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘cv::Mat HSV_extractor(cv::Mat, int, int)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5060:83: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+ 5060 |    if (!(((H > 0) && (H < 10)) || (H > 160) && (H < 180) && (S >= 80 && S <= 140) && (V > 50 && V < 230)))
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘double calcu_dis(double, double, cv::Mat, double, double, double)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5076:9: warning: unused variable ‘true_ellipse_d’ [-Wunused-variable]
+ 5076 |  double true_ellipse_d = 0.2;
+      |         ^~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘double con_similarity(cv::Mat*, cv::Mat)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5131:12: error: ‘class cv::Mat’ has no member named ‘height’
+ 5131 |  if (img1->height != img2.rows)
+      |            ^~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5133:12: error: ‘class cv::Mat’ has no member named ‘width’
+ 5133 |  if (img1->width != img2.cols)
+      |            ^~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5135:28: error: ‘class cv::Mat’ has no member named ‘height’
+ 5135 |  for (int i = 0; i < img1->height; i++) // 遍历每一行
+      |                            ^~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5137:29: error: ‘class cv::Mat’ has no member named ‘width’
+ 5137 |   for (int j = 0; j < img1->width; j++) // 遍历每一列
+      |                             ^~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5139:29: error: ‘class cv::Mat’ has no member named ‘imageData’
+ 5139 |    pixel = ((uchar *)(img1->imageData + img1->widthStep * j))[i];
+      |                             ^~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5139:47: error: ‘class cv::Mat’ has no member named ‘widthStep’
+ 5139 |    pixel = ((uchar *)(img1->imageData + img1->widthStep * j))[i];
+      |                                               ^~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘double con_quality(cv::Mat*, cv::Mat, cv::Point, cv::Size, double)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5171:28: error: ‘class cv::Mat’ has no member named ‘height’
+ 5171 |  for (int i = 0; i < img1->height; i++) // 遍历每一行
+      |                            ^~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5173:29: error: ‘class cv::Mat’ has no member named ‘width’
+ 5173 |   for (int j = 0; j < img1->width; j++) // 遍历每一列
+      |                             ^~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘int ellipse_detect(cv::Mat, int, std::vector<std::vector<double, std::allocator<double> > >&, double, double, double)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5271:2: error: ‘CvMemStorage’ was not declared in this scope
+ 5271 |  CvMemStorage *storage = cvCreateMemStorage(0); // 创建内存存储器，用来存储返回的轮廓
+      |  ^~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5271:16: error: ‘storage’ was not declared in this scope
+ 5271 |  CvMemStorage *storage = cvCreateMemStorage(0); // 创建内存存储器，用来存储返回的轮廓
+      |                ^~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5271:26: error: ‘cvCreateMemStorage’ was not declared in this scope
+ 5271 |  CvMemStorage *storage = cvCreateMemStorage(0); // 创建内存存储器，用来存储返回的轮廓
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5286:24: error: cannot convert ‘cv::Mat’ to ‘cv::Mat*’ in initialization
+ 5286 |  cv::Mat *imgIpl = cv::Mat(cv::Size(ysize, xsize), CV_8UC3);  // 用于处理
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                        |
+      |                        cv::Mat
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5287:25: error: cannot convert ‘cv::Mat’ to ‘cv::Mat*’ in initialization
+ 5287 |  cv::Mat *drawimg = cv::Mat(cv::Size(ysize, xsize), CV_8UC3); // 用于画图
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                         |
+      |                         cv::Mat
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5289:26: error: cannot convert ‘cv::Mat’ to ‘cv::Mat*’ in initialization
+ 5289 |  cv::Mat *painting = cv::Mat(cv::Size(ysize, xsize), CV_8UC3); // 用于画图
+      |                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                          |
+      |                          cv::Mat
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: error: no matching function for call to ‘cv::Mat::Mat(cv::Mat*)’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core/mat.hpp:3724,
+                 from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:1380:1: note: candidate: ‘cv::Mat::Mat(cv::Mat&&)’
+ 1380 | Mat::Mat(Mat&& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:1380:16: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘cv::Mat&&’
+ 1380 | Mat::Mat(Mat&& m)
+      |          ~~~~~~^
+In file included from /usr/include/opencv4/opencv2/core/cuda.hpp:1047,
+                 from /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp:47,
+                 from /usr/include/opencv4/opencv2/stitching/warpers.hpp:46,
+                 from /usr/include/opencv4/opencv2/stitching.hpp:48,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:89,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.h:14,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:52:
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:621:1: note: candidate: ‘cv::Mat::Mat(const cv::cuda::GpuMat&)’
+  621 | Mat::Mat(const cuda::GpuMat& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:621:30: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘const cv::cuda::GpuMat&’
+  621 | Mat::Mat(const cuda::GpuMat& m)
+      |          ~~~~~~~~~~~~~~~~~~~~^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1038:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::MatCommaInitializer_<_Tp>&)’
+ 1038 |     template<typename _Tp> explicit Mat(const MatCommaInitializer_<_Tp>& commaInitializer);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1038:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   mismatched types ‘const cv::MatCommaInitializer_<_Tp>’ and ‘cv::Mat*’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1034:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::Point3_<_Tp>&, bool)’
+ 1034 |     template<typename _Tp> explicit Mat(const Point3_<_Tp>& pt, bool copyData=true);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1034:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘cv::Mat*’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1030:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::Point_<_Tp>&, bool)’
+ 1030 |     template<typename _Tp> explicit Mat(const Point_<_Tp>& pt, bool copyData=true);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1030:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘cv::Mat*’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1026:51: note: candidate: ‘template<class _Tp, int m, int n> cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool)’
+ 1026 |     template<typename _Tp, int m, int n> explicit Mat(const Matx<_Tp, m, n>& mtx, bool copyData=true);
+      |                                                   ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1026:51: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘cv::Mat*’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1022:44: note: candidate: ‘template<class _Tp, int n> cv::Mat::Mat(const cv::Vec<_Tp, m>&, bool)’
+ 1022 |     template<typename _Tp, int n> explicit Mat(const Vec<_Tp, n>& vec, bool copyData=true);
+      |                                            ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1022:44: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘cv::Mat*’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1018:49: note: candidate: ‘template<class _Tp, long unsigned int _Nm> cv::Mat::Mat(const std::array<_Tp, _Nm>&, bool)’
+ 1018 |     template<typename _Tp, size_t _Nm> explicit Mat(const std::array<_Tp, _Nm>& arr, bool copyData=false);
+      |                                                 ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1018:49: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   mismatched types ‘const std::array<_Tp, _Nm>’ and ‘cv::Mat*’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1014:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(std::initializer_list<int>, std::initializer_list<_Tp>)’
+ 1014 |     template<typename _Tp> explicit Mat(const std::initializer_list<int> sizes, const std::initializer_list<_Tp> list);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1014:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   candidate expects 2 arguments, 1 provided
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1010:14: note: candidate: ‘template<class _Tp, class> cv::Mat::Mat(std::initializer_list<_Tp>)’
+ 1010 |     explicit Mat(const std::initializer_list<_Tp> list);
+      |              ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1010:14: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘cv::Mat*’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1005:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const std::vector<_Tp>&, bool)’
+ 1005 |     template<typename _Tp> explicit Mat(const std::vector<_Tp>& vec, bool copyData=false);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1005:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5291:31: note:   mismatched types ‘const std::vector<_Tp>’ and ‘cv::Mat*’
+ 5291 |  painting = cv::Mat(&painting_);
+      |                               ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:987:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const std::vector<cv::Range>&)’
+  987 |     Mat(const Mat& m, const std::vector<Range>& ranges);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:987:5: note:   candidate expects 2 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.hpp:977:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const cv::Range*)’
+  977 |     Mat(const Mat& m, const Range* ranges);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:977:5: note:   candidate expects 2 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.hpp:967:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const Rect&)’
+  967 |     Mat(const Mat& m, const Rect& roi);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:967:5: note:   candidate expects 2 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.hpp:957:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const cv::Range&, const cv::Range&)’
+  957 |     Mat(const Mat& m, const Range& rowRange, const Range& colRange=Range::all());
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:957:5: note:   candidate expects 3 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.hpp:945:5: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int, void*, const size_t*)’
+  945 |     Mat(const std::vector<int>& sizes, int type, void* data, const size_t* steps=0);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:945:5: note:   candidate expects 4 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.hpp:931:5: note: candidate: ‘cv::Mat::Mat(int, const int*, int, void*, const size_t*)’
+  931 |     Mat(int ndims, const int* sizes, int type, void* data, const size_t* steps=0);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:931:5: note:   candidate expects 5 arguments, 1 provided
+In file included from /usr/include/opencv4/opencv2/core/mat.hpp:3724,
+                 from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:572:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int, void*, size_t)’
+  572 | Mat::Mat(Size _sz, int _type, void* _data, size_t _step)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:572:1: note:   candidate expects 4 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:543:1: note: candidate: ‘cv::Mat::Mat(int, int, int, void*, size_t)’
+  543 | Mat::Mat(int _rows, int _cols, int _type, void* _data, size_t _step)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:543:1: note:   candidate expects 5 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:524:1: note: candidate: ‘cv::Mat::Mat(const cv::Mat&)’
+  524 | Mat::Mat(const Mat& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:524:21: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘const cv::Mat&’
+  524 | Mat::Mat(const Mat& m)
+      |          ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:515:1: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int, const Scalar&)’
+  515 | Mat::Mat(const std::vector<int>& _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:515:1: note:   candidate expects 3 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:498:1: note: candidate: ‘cv::Mat::Mat(int, const int*, int, const Scalar&)’
+  498 | Mat::Mat(int _dims, const int* _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:498:1: note:   candidate expects 4 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:507:1: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int)’
+  507 | Mat::Mat(const std::vector<int>& _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:507:1: note:   candidate expects 2 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:490:1: note: candidate: ‘cv::Mat::Mat(int, const int*, int)’
+  490 | Mat::Mat(int _dims, const int* _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:490:1: note:   candidate expects 3 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:481:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int, const Scalar&)’
+  481 | Mat::Mat(Size _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:481:1: note:   candidate expects 3 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:464:1: note: candidate: ‘cv::Mat::Mat(int, int, int, const Scalar&)’
+  464 | Mat::Mat(int _rows, int _cols, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:464:1: note:   candidate expects 4 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:473:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int)’
+  473 | Mat::Mat(Size _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:473:1: note:   candidate expects 2 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:456:1: note: candidate: ‘cv::Mat::Mat(int, int, int)’
+  456 | Mat::Mat(int _rows, int _cols, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:456:1: note:   candidate expects 3 arguments, 1 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:450:1: note: candidate: ‘cv::Mat::Mat()’
+  450 | Mat::Mat()
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:450:1: note:   candidate expects 0 arguments, 1 provided
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5293:34: error: ‘cvGetSize’ was not declared in this scope
+ 5293 |  cv::Mat *SmoothyImage = cv::Mat(cvGetSize(imgIpl), CV_8UC3); // 高斯平滑后的彩色图
+      |                                  ^~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5294:49: error: unable to find numeric literal operator ‘operator""CV_8UC3’
+ 5294 |  cv::Mat *ImageRGB = cv::Mat(cvGetSize(imgIpl), 8CV_8UC3);  // 彩色原图的副本
+      |                                                 ^~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5294:49: note: use ‘-fext-numeric-literals’ to enable more built-in suffixes
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5303:12: error: ‘cvCloneImage’ was not declared in this scope
+ 5303 |   imgIpl = cvCloneImage(&imgTmp);
+      |            ^~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5308:3: error: ‘cvConvertImage’ was not declared in this scope
+ 5308 |   cvConvertImage(imgIpl, ImageRGB, 0); // 将载入的图片转化为8位三通道图像放入ImageRGB
+      |   ^~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: error: no matching function for call to ‘cv::Mat::Mat(cv::Mat*&, bool)’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core/mat.hpp:3724,
+                 from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:1380:1: note: candidate: ‘cv::Mat::Mat(cv::Mat&&)’
+ 1380 | Mat::Mat(Mat&& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:1380:1: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/opencv4/opencv2/core/cuda.hpp:1047,
+                 from /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp:47,
+                 from /usr/include/opencv4/opencv2/stitching/warpers.hpp:46,
+                 from /usr/include/opencv4/opencv2/stitching.hpp:48,
+                 from /usr/include/opencv4/opencv2/opencv.hpp:89,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.h:14,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:52:
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:621:1: note: candidate: ‘cv::Mat::Mat(const cv::cuda::GpuMat&)’
+  621 | Mat::Mat(const cuda::GpuMat& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/cuda.inl.hpp:621:1: note:   candidate expects 1 argument, 2 provided
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1038:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::MatCommaInitializer_<_Tp>&)’
+ 1038 |     template<typename _Tp> explicit Mat(const MatCommaInitializer_<_Tp>& commaInitializer);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1038:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘const cv::MatCommaInitializer_<_Tp>’ and ‘cv::Mat*’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1034:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::Point3_<_Tp>&, bool)’
+ 1034 |     template<typename _Tp> explicit Mat(const Point3_<_Tp>& pt, bool copyData=true);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1034:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘const cv::Point3_<_Tp>’ and ‘cv::Mat*’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1030:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const cv::Point_<_Tp>&, bool)’
+ 1030 |     template<typename _Tp> explicit Mat(const Point_<_Tp>& pt, bool copyData=true);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1030:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘const cv::Point_<_Tp>’ and ‘cv::Mat*’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1026:51: note: candidate: ‘template<class _Tp, int m, int n> cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool)’
+ 1026 |     template<typename _Tp, int m, int n> explicit Mat(const Matx<_Tp, m, n>& mtx, bool copyData=true);
+      |                                                   ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1026:51: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘const cv::Matx<_Tp, m, n>’ and ‘cv::Mat*’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1022:44: note: candidate: ‘template<class _Tp, int n> cv::Mat::Mat(const cv::Vec<_Tp, m>&, bool)’
+ 1022 |     template<typename _Tp, int n> explicit Mat(const Vec<_Tp, n>& vec, bool copyData=true);
+      |                                            ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1022:44: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘const cv::Vec<_Tp, m>’ and ‘cv::Mat*’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1018:49: note: candidate: ‘template<class _Tp, long unsigned int _Nm> cv::Mat::Mat(const std::array<_Tp, _Nm>&, bool)’
+ 1018 |     template<typename _Tp, size_t _Nm> explicit Mat(const std::array<_Tp, _Nm>& arr, bool copyData=false);
+      |                                                 ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1018:49: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘const std::array<_Tp, _Nm>’ and ‘cv::Mat*’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1014:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(std::initializer_list<int>, std::initializer_list<_Tp>)’
+ 1014 |     template<typename _Tp> explicit Mat(const std::initializer_list<int> sizes, const std::initializer_list<_Tp> list);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1014:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘bool’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1010:14: note: candidate: ‘template<class _Tp, class> cv::Mat::Mat(std::initializer_list<_Tp>)’
+ 1010 |     explicit Mat(const std::initializer_list<_Tp> list);
+      |              ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1010:14: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘cv::Mat*’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:1005:37: note: candidate: ‘template<class _Tp> cv::Mat::Mat(const std::vector<_Tp>&, bool)’
+ 1005 |     template<typename _Tp> explicit Mat(const std::vector<_Tp>& vec, bool copyData=false);
+      |                                     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:1005:37: note:   template argument deduction/substitution failed:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5311:35: note:   mismatched types ‘const std::vector<_Tp>’ and ‘cv::Mat*’
+ 5311 |   dstImage = cv::Mat(ImageRGB,true);
+      |                                   ^
+In file included from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.hpp:987:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const std::vector<cv::Range>&)’
+  987 |     Mat(const Mat& m, const std::vector<Range>& ranges);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:987:20: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘const cv::Mat&’
+  987 |     Mat(const Mat& m, const std::vector<Range>& ranges);
+      |         ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.hpp:977:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const cv::Range*)’
+  977 |     Mat(const Mat& m, const Range* ranges);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:977:20: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘const cv::Mat&’
+  977 |     Mat(const Mat& m, const Range* ranges);
+      |         ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.hpp:967:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const Rect&)’
+  967 |     Mat(const Mat& m, const Rect& roi);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:967:20: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘const cv::Mat&’
+  967 |     Mat(const Mat& m, const Rect& roi);
+      |         ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.hpp:957:5: note: candidate: ‘cv::Mat::Mat(const cv::Mat&, const cv::Range&, const cv::Range&)’
+  957 |     Mat(const Mat& m, const Range& rowRange, const Range& colRange=Range::all());
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:957:20: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘const cv::Mat&’
+  957 |     Mat(const Mat& m, const Range& rowRange, const Range& colRange=Range::all());
+      |         ~~~~~~~~~~~^
+/usr/include/opencv4/opencv2/core/mat.hpp:945:5: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int, void*, const size_t*)’
+  945 |     Mat(const std::vector<int>& sizes, int type, void* data, const size_t* steps=0);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:945:5: note:   candidate expects 4 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.hpp:931:5: note: candidate: ‘cv::Mat::Mat(int, const int*, int, void*, const size_t*)’
+  931 |     Mat(int ndims, const int* sizes, int type, void* data, const size_t* steps=0);
+      |     ^~~
+/usr/include/opencv4/opencv2/core/mat.hpp:931:5: note:   candidate expects 5 arguments, 2 provided
+In file included from /usr/include/opencv4/opencv2/core/mat.hpp:3724,
+                 from /usr/include/opencv4/opencv2/core.hpp:59,
+                 from /usr/include/opencv4/opencv2/imgproc.hpp:46,
+                 from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:572:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int, void*, size_t)’
+  572 | Mat::Mat(Size _sz, int _type, void* _data, size_t _step)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:572:1: note:   candidate expects 4 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:543:1: note: candidate: ‘cv::Mat::Mat(int, int, int, void*, size_t)’
+  543 | Mat::Mat(int _rows, int _cols, int _type, void* _data, size_t _step)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:543:1: note:   candidate expects 5 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:524:1: note: candidate: ‘cv::Mat::Mat(const cv::Mat&)’
+  524 | Mat::Mat(const Mat& m)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:524:1: note:   candidate expects 1 argument, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:515:1: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int, const Scalar&)’
+  515 | Mat::Mat(const std::vector<int>& _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:515:1: note:   candidate expects 3 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:498:1: note: candidate: ‘cv::Mat::Mat(int, const int*, int, const Scalar&)’
+  498 | Mat::Mat(int _dims, const int* _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:498:1: note:   candidate expects 4 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:507:1: note: candidate: ‘cv::Mat::Mat(const std::vector<int>&, int)’
+  507 | Mat::Mat(const std::vector<int>& _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:507:34: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘const std::vector<int>&’
+  507 | Mat::Mat(const std::vector<int>& _sz, int _type)
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:490:1: note: candidate: ‘cv::Mat::Mat(int, const int*, int)’
+  490 | Mat::Mat(int _dims, const int* _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:490:1: note:   candidate expects 3 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:481:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int, const Scalar&)’
+  481 | Mat::Mat(Size _sz, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:481:1: note:   candidate expects 3 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:464:1: note: candidate: ‘cv::Mat::Mat(int, int, int, const Scalar&)’
+  464 | Mat::Mat(int _rows, int _cols, int _type, const Scalar& _s)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:464:1: note:   candidate expects 4 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:473:1: note: candidate: ‘cv::Mat::Mat(cv::Size, int)’
+  473 | Mat::Mat(Size _sz, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:473:15: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘cv::Size’ {aka ‘cv::Size_<int>’}
+  473 | Mat::Mat(Size _sz, int _type)
+      |          ~~~~~^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:456:1: note: candidate: ‘cv::Mat::Mat(int, int, int)’
+  456 | Mat::Mat(int _rows, int _cols, int _type)
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:456:1: note:   candidate expects 3 arguments, 2 provided
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:450:1: note: candidate: ‘cv::Mat::Mat()’
+  450 | Mat::Mat()
+      | ^~~
+/usr/include/opencv4/opencv2/core/mat.inl.hpp:450:1: note:   candidate expects 0 arguments, 2 provided
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5423:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+ 5423 |  for (int i = 0; i < groups.size(); i++)
+      |                  ~~^~~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5474:11: error: ‘cvCloneImage’ was not declared in this scope
+ 5474 |  BImage = cvCloneImage(&con_); // 边缘图像
+      |           ^~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5724:129: error: no matching function for call to ‘ellipse(cv::Mat*&, cv::Point&, cv::Size&, double, int, int, cv::Scalar, int, cv::LineTypes)’
+ 5724 |     cv::ellipse(painting, center, axis, 90 - 180 * candidates[i * 5 + 4] / pi, 0, 360, cv::Scalar(255, 255, 255), 2, cv::LINE_AA);
+      |                                                                                                                                 ^
+In file included from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/imgproc.hpp:4377:19: note: candidate: ‘void cv::ellipse(cv::InputOutputArray, cv::Point, cv::Size, double, double, double, const Scalar&, int, int, int)’
+ 4377 | CV_EXPORTS_W void ellipse(InputOutputArray img, Point center, Size axes,
+      |                   ^~~~~~~
+/usr/include/opencv4/opencv2/imgproc.hpp:4377:44: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘cv::InputOutputArray’ {aka ‘const cv::_InputOutputArray&’}
+ 4377 | CV_EXPORTS_W void ellipse(InputOutputArray img, Point center, Size axes,
+      |                           ~~~~~~~~~~~~~~~~~^~~
+/usr/include/opencv4/opencv2/imgproc.hpp:4391:19: note: candidate: ‘void cv::ellipse(cv::InputOutputArray, const cv::RotatedRect&, const Scalar&, int, int)’
+ 4391 | CV_EXPORTS_W void ellipse(InputOutputArray img, const RotatedRect& box, const Scalar& color,
+      |                   ^~~~~~~
+/usr/include/opencv4/opencv2/imgproc.hpp:4391:19: note:   candidate expects 5 arguments, 9 provided
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5739:33: error: cannot convert ‘cv::Mat’ to ‘cv::Mat*’
+ 5739 |     similarity = con_similarity(BImage, con);
+      |                                 ^~~~~~
+      |                                 |
+      |                                 cv::Mat
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5125:32: note:   initializing argument 1 of ‘double con_similarity(cv::Mat*, cv::Mat)’
+ 5125 | double con_similarity(cv::Mat *img1, cv::Mat img2) // 输入1为画的椭圆图，输入2为边缘图
+      |                       ~~~~~~~~~^~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5741:27: error: cannot convert ‘cv::Mat’ to ‘cv::Mat*’
+ 5741 |     quality = con_quality(BImage, testtest, center, axis, 90 - 180 * candidates[i * 5 + 4] / pi);
+      |                           ^~~~~~
+      |                           |
+      |                           cv::Mat
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5158:29: note:   initializing argument 1 of ‘double con_quality(cv::Mat*, cv::Mat, cv::Point, cv::Size, double)’
+ 5158 | double con_quality(cv::Mat *img1, cv::Mat img2, cv::Point center, cv::Size axis, double theta) // 输入1为画的椭圆图，输入2为原始图像
+      |                    ~~~~~~~~~^~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5744:129: error: no matching function for call to ‘ellipse(cv::Mat*&, cv::Point&, cv::Size&, double, int, int, cv::Scalar, int, cv::LineTypes, int)’
+ 5744 |     cv::ellipse(drawimg, center, axis, 90 - 180 * candidates[i * 5 + 4] / pi, 0, 360, cv::Scalar(235, 97, 0), 2, cv::LINE_AA, 0); // draw colored image
+      |                                                                                                                                ^
+
+In file included from /home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:47:
+/usr/include/opencv4/opencv2/imgproc.hpp:4377:19: note: candidate: ‘void cv::ellipse(cv::InputOutputArray, cv::Point, cv::Size, double, double, double, const Scalar&, int, int, int)’
+ 4377 | CV_EXPORTS_W void ellipse(InputOutputArray img, Point center, Size axes,
+      |                   ^~~~~~~
+/usr/include/opencv4/opencv2/imgproc.hpp:4377:44: note:   no known conversion for argument 1 from ‘cv::Mat*’ to ‘cv::InputOutputArray’ {aka ‘const cv::_InputOutputArray&’}
+ 4377 | CV_EXPORTS_W void ellipse(InputOutputArray img, Point center, Size axes,
+      |                           ~~~~~~~~~~~~~~~~~^~~
+/usr/include/opencv4/opencv2/imgproc.hpp:4391:19: note: candidate: ‘void cv::ellipse(cv::InputOutputArray, const cv::RotatedRect&, const Scalar&, int, int)’
+ 4391 | CV_EXPORTS_W void ellipse(InputOutputArray img, const RotatedRect& box, const Scalar& color,
+      |                   ^~~~~~~
+/usr/include/opencv4/opencv2/imgproc.hpp:4391:19: note:   candidate expects 5 arguments, 10 provided
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:5368:6: warning: unused variable ‘edge_process_selecet’ [-Wunused-variable]
+ 5368 |  int edge_process_selecet = 0; // 指定的边缘检测方法
+      |      ^~~~~~~~~~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: In function ‘image_double_s* ll_angle(image_double, double, coorlist**, image_double_s**, unsigned int)’:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:1019:11: warning: ignoring return value of ‘int system(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+ 1019 |     system("pause");
+      |     ~~~~~~^~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp: At global scope:
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:1610:13: warning: ‘void region2rect2(point2i*, int, double, double, double, double, double, rect*)’ defined but not used [-Wunused-function]
+ 1610 | static void region2rect2(point2i *reg, int reg_size, double reg_center_x, double reg_center_y,
+      |             ^~~~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:563:13: warning: ‘void add_7tuple(ntuple_list, double, double, double, double, double, double, double)’ defined but not used [-Wunused-function]
+  563 | static void add_7tuple(ntuple_list out, double v1, double v2, double v3,
+      |             ^~~~~~~~~~
+/home/seu/xjl_work_space/gvins_yolo_ws/src/VINS-Mono-master/feature_tracker/src/ellipse_detect.cpp:68:12: warning: ‘nancheck_flag’ defined but not used [-Wunused-variable]
+   68 | static int nancheck_flag = -1;
+      |            ^~~~~~~~~~~~~
+make[2]: *** [VINS-Mono-master/feature_tracker/CMakeFiles/feature_tracker.dir/build.make:121：VINS-Mono-master/feature_tracker/CMakeFiles/feature_tracker.dir/src/ellipse_detect.cpp.o] 错误 1
+make[1]: *** [CMakeFiles/Makefile2:7681：VINS-Mono-master/feature_tracker/CMakeFiles/feature_tracker.dir/all] 错误 2
+make: *** [Makefile:146：all] 错误 2
+Invoking "make -j24 -l24" failed

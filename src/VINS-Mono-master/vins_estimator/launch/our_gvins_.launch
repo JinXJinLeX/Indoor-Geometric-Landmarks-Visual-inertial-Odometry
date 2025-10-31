@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+
+    <arg name="config_path" default = "$(find feature_tracker)/../config/euroc/our_gvins_.yaml" />
+	  <arg name="vins_path" default = "$(find feature_tracker)/../config/../" />
+    
+    <node name="feature_tracker" pkg="feature_tracker" type="feature_tracker" output="log">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="vins_folder" type="string" value="$(arg vins_path)" />
+    </node>
+    <node name="vins_estimator" pkg="vins_estimator" type="vins_estimator" output="screen">
+       <param name="config_file" type="string" value="$(arg config_path)" />
+       <param name="vins_folder" type="string" value="$(arg vins_path)" />
+    </node>
+
+    <node name="pose_graph" pkg="pose_graph" type="pose_graph" output="screen">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="visualization_shift_x" type="int" value="0" />
+        <param name="visualization_shift_y" type="int" value="0" />
+        <param name="skip_cnt" type="int" value="0" />
+        <param name="skip_dis" type="double" value="0" />
+    </node>
+    <!--<node 
+      pkg="mvs_ros_pkg"
+      type="grabImg"
+      name="mvs_camera"
+      args="$(find mvs_ros_pkg)/config/left_camera.yaml"
+      respawn="true"
+      output="screen"
+    />-->
+
+<!-- 相机话题 -->
+<!-- 发布的话题 -->
+<!-- 置信度在此设置，大于阈值则框出 -->
+  <!-- Load Parameter -->
+  <!-- <param name="yolov5_path"       value="$(find yolov5_ros)/yolov5"/>
+  <param name="use_cpu"           value="false" /> -->
+    <!--<node pkg="yolov5_ros" type="yolo_v5.py" name="yolov5_ros" output="log" > 
+     <param name="weight_path"       value="$(find yolov5_ros)/weights/best.pt"/>
+    <param name="image_topic"       value="/left_camera/image" />
+    <param name="pub_topic"         value="/yolov5/BoundingBoxes" />
+    <param name="camera_frame"       value="camera_color_frame"/>
+    <param name="conf"              value="0.4" />
+  </node>  -->
+     <node pkg="image_transport" type="republish" name="republish" args="compressed in:=/left_camera/image raw out:=/left_camera/image" output="screen" respawn="true" /> 
+</launch>

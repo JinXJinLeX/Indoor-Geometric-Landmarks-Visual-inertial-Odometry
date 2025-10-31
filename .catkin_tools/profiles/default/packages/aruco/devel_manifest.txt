@@ -1,0 +1,6 @@
+aruco_ros-melodic-devel/aruco
+/home/scott/gvins_yolo_ws/devel/.private/aruco/cmake.lock /home/scott/gvins_yolo_ws/devel/./cmake.lock
+/home/scott/gvins_yolo_ws/devel/.private/aruco/lib/libaruco.so /home/scott/gvins_yolo_ws/devel/lib/libaruco.so
+/home/scott/gvins_yolo_ws/devel/.private/aruco/lib/pkgconfig/aruco.pc /home/scott/gvins_yolo_ws/devel/lib/pkgconfig/aruco.pc
+/home/scott/gvins_yolo_ws/devel/.private/aruco/share/aruco/cmake/arucoConfig.cmake /home/scott/gvins_yolo_ws/devel/share/aruco/cmake/arucoConfig.cmake
+/home/scott/gvins_yolo_ws/devel/.private/aruco/share/aruco/cmake/arucoConfig-version.cmake /home/scott/gvins_yolo_ws/devel/share/aruco/cmake/arucoConfig-version.cmake

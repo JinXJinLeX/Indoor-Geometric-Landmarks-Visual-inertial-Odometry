@@ -1,0 +1,8 @@
+# Ignore build and devel directions
+build/
+devel/
+logs/
+install/
+
+.vscode./
+.idea/

@@ -1,0 +1,10 @@
+VINS-Mono-master/mvs_ros_pkg
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/cmake.lock /home/scott/gvins_yolo_ws/devel/./cmake.lock
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/lib/mvs_ros_pkg/parse_topic_time /home/scott/gvins_yolo_ws/devel/lib/mvs_ros_pkg/parse_topic_time
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/lib/mvs_ros_pkg/Trigger_Image /home/scott/gvins_yolo_ws/devel/lib/mvs_ros_pkg/Trigger_Image
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/lib/mvs_ros_pkg/grabImg /home/scott/gvins_yolo_ws/devel/lib/mvs_ros_pkg/grabImg
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/lib/mvs_ros_pkg/grabImgWithTrigger /home/scott/gvins_yolo_ws/devel/lib/mvs_ros_pkg/grabImgWithTrigger
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/lib/mvs_ros_pkg/parse_type_time /home/scott/gvins_yolo_ws/devel/lib/mvs_ros_pkg/parse_type_time
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/lib/pkgconfig/mvs_ros_pkg.pc /home/scott/gvins_yolo_ws/devel/lib/pkgconfig/mvs_ros_pkg.pc
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/share/mvs_ros_pkg/cmake/mvs_ros_pkgConfig.cmake /home/scott/gvins_yolo_ws/devel/share/mvs_ros_pkg/cmake/mvs_ros_pkgConfig.cmake
+/home/scott/gvins_yolo_ws/devel/.private/mvs_ros_pkg/share/mvs_ros_pkg/cmake/mvs_ros_pkgConfig-version.cmake /home/scott/gvins_yolo_ws/devel/share/mvs_ros_pkg/cmake/mvs_ros_pkgConfig-version.cmake

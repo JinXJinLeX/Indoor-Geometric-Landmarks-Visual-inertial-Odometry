@@ -1,0 +1,6 @@
+VINS-Mono-master/feature_tracker
+/home/scott/gvins_yolo_ws/devel/.private/feature_tracker/cmake.lock /home/scott/gvins_yolo_ws/devel/./cmake.lock
+/home/scott/gvins_yolo_ws/devel/.private/feature_tracker/lib/pkgconfig/feature_tracker.pc /home/scott/gvins_yolo_ws/devel/lib/pkgconfig/feature_tracker.pc
+/home/scott/gvins_yolo_ws/devel/.private/feature_tracker/lib/feature_tracker/feature_tracker /home/scott/gvins_yolo_ws/devel/lib/feature_tracker/feature_tracker
+/home/scott/gvins_yolo_ws/devel/.private/feature_tracker/share/feature_tracker/cmake/feature_trackerConfig.cmake /home/scott/gvins_yolo_ws/devel/share/feature_tracker/cmake/feature_trackerConfig.cmake
+/home/scott/gvins_yolo_ws/devel/.private/feature_tracker/share/feature_tracker/cmake/feature_trackerConfig-version.cmake /home/scott/gvins_yolo_ws/devel/share/feature_tracker/cmake/feature_trackerConfig-version.cmake

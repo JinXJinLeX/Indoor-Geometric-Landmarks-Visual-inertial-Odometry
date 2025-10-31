@@ -1,0 +1,9 @@
+<!--xml version = "1.0"-->
+<launch>
+    <node name="bag2tum" pkg="bag2tum" type="bag2tum_node" output="screen">
+        <param name="save_folder" value="/home/scott/gvins_yolo_output" />
+        <param name="rgb_topic" value="/camera/color/image_raw" />
+        <!--<param name="depth_topic" value="/camera/aligned_depth_to_color/image_raw" /> -->
+    </node>
+
+</launch>

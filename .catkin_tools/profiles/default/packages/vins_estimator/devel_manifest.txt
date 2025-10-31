@@ -1,0 +1,6 @@
+VINS-Mono-master/vins_estimator
+/home/scott/gvins_yolo_ws/devel/.private/vins_estimator/cmake.lock /home/scott/gvins_yolo_ws/devel/./cmake.lock
+/home/scott/gvins_yolo_ws/devel/.private/vins_estimator/lib/pkgconfig/vins_estimator.pc /home/scott/gvins_yolo_ws/devel/lib/pkgconfig/vins_estimator.pc
+/home/scott/gvins_yolo_ws/devel/.private/vins_estimator/lib/vins_estimator/vins_estimator /home/scott/gvins_yolo_ws/devel/lib/vins_estimator/vins_estimator
+/home/scott/gvins_yolo_ws/devel/.private/vins_estimator/share/vins_estimator/cmake/vins_estimatorConfig.cmake /home/scott/gvins_yolo_ws/devel/share/vins_estimator/cmake/vins_estimatorConfig.cmake
+/home/scott/gvins_yolo_ws/devel/.private/vins_estimator/share/vins_estimator/cmake/vins_estimatorConfig-version.cmake /home/scott/gvins_yolo_ws/devel/share/vins_estimator/cmake/vins_estimatorConfig-version.cmake

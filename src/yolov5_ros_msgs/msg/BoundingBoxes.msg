@@ -1,0 +1,9 @@
+Header header
+Header image_header
+int64 width
+int64 height
+string encoding
+uint8 is_bigendian
+uint32 step
+uint8[] data
+BoundingBox[] bounding_boxes

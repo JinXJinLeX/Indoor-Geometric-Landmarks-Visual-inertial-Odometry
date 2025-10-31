@@ -1,0 +1,6 @@
+VINS-Mono-master/pose_graph
+/home/scott/gvins_yolo_ws/devel/.private/pose_graph/cmake.lock /home/scott/gvins_yolo_ws/devel/./cmake.lock
+/home/scott/gvins_yolo_ws/devel/.private/pose_graph/lib/pkgconfig/pose_graph.pc /home/scott/gvins_yolo_ws/devel/lib/pkgconfig/pose_graph.pc
+/home/scott/gvins_yolo_ws/devel/.private/pose_graph/lib/pose_graph/pose_graph /home/scott/gvins_yolo_ws/devel/lib/pose_graph/pose_graph
+/home/scott/gvins_yolo_ws/devel/.private/pose_graph/share/pose_graph/cmake/pose_graphConfig.cmake /home/scott/gvins_yolo_ws/devel/share/pose_graph/cmake/pose_graphConfig.cmake
+/home/scott/gvins_yolo_ws/devel/.private/pose_graph/share/pose_graph/cmake/pose_graphConfig-version.cmake /home/scott/gvins_yolo_ws/devel/share/pose_graph/cmake/pose_graphConfig-version.cmake
